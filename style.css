@@ -1,0 +1,55 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  text-align: center;
+  /* font-family: Stencil Std, fantasy; */
+  font-size: 25px;
+  font-style: "Times New Roman", Times, serif;
+}
+main{
+    width: 75%;
+    border: 1px solid black ;
+    margin: 50px auto;
+    display: grid;
+    color: white;
+    grid-template-rows: 60px 100px 200px 60px;
+    grid-template-columns: 1fr 1fr 1fr 150px;
+    grid-gap: 20px;
+    grid-template-areas:
+    "head head head head"
+    "content1 content2 content3 advert "
+    "ads ads ads advert"
+    "footer footer footer footer";
+}
+
+ 
+.div1{
+    grid-area: head ;
+    background: red;
+  
+}
+.div2{
+    grid-area: content1;
+    background: green;
+}
+.div3{
+    grid-area: content2;
+    background: hotpink;
+}
+.div4{
+    grid-area: content3;
+    background: indigo;
+}
+.div5{
+    grid-area: advert;
+    background: black;
+}
+.div6{
+    background: rgb(187, 187, 22);
+    grid-area: ads;
+}
+.div7{
+    background: turquoise;
+    grid-area: footer;
+}
